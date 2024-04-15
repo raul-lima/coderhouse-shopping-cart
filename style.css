@@ -1,0 +1,44 @@
+/**
+* ? Changing browser's default styles
+**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/**
+* ? Navbar styles
+**/
+
+.navbar {
+  background-color: #6699cc;
+  color: white;
+  padding: 25px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: #2d2d2a;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cart-amount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: #d00000;
+  color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+}
