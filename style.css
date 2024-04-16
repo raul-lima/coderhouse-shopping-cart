@@ -30,6 +30,7 @@ a {
   padding: 25px 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -117,7 +118,9 @@ a {
   margin-bottom: 20px;
 }
 
-.home-button {
+.home-button,
+.checkout,
+.remove-all {
   background-color: #212529;
   color: white;
   border: none;
@@ -125,6 +128,13 @@ a {
   border: 3px;
   cursor: pointer;
   margin-top: 10px;
+}
+.checkout {
+  background: #bbbe64;
+}
+
+.remove-all {
+  background: #d00000;
 }
 
 .bi-x-lg {

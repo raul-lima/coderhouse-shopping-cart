@@ -14,7 +14,6 @@ calculation();
 
 let generateCartItems = () => {
     if (cart.length !== 0) {
-        console.log("Cart is not empty");
         return (shoppingCart.innerHTML = cart
             .map((x) => {
                 let { id, quantity, name, img, price } = x;
@@ -94,12 +93,44 @@ let update = (id) => {
     let search = cart.find((product) => product.id === id);
     document.getElementById(id).innerHTML = search.quantity;
     calculation();
+    totalAmount();
 };
 
 let removeItem = (id) => {
     let selectedItem = id;
     cart = cart.filter((x) => x.id !== selectedItem);
     generateCartItems();
+    totalAmount();
+    calculation();
     localStorage.setItem("data", JSON.stringify(cart));
     console.log(selectedItem);
 };
+
+let clearCart = () => {
+    cart = []
+    generateCartItems();
+    calculation();
+    localStorage.setItem("data", JSON.stringify(cart));
+}
+
+let totalAmount = () => {
+    if (cart.length !== 0) {
+        let amount = cart
+            .map((x) => {
+                let { id, quantity } = x;
+                let filterData = shopItemsData.find((x) => x.id == id);
+                return filterData.price * quantity;
+            })
+            .reduce((x, y) => x + y, 0);
+
+        label.innerHTML = `
+            <h2>Total Bill : $ ${amount}</h2>
+            <button class="checkout">Checkout</button>
+            <button onclick="clearCart()" class="remove-all">Clear Cart</button>
+        `;
+    } else {
+        return;
+    }
+};
+
+totalAmount();
