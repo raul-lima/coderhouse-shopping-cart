@@ -29,7 +29,7 @@ let generateCartItems = () => {
                                 <p class="cart-item-price">$ ${search ? search.price : ""
                     }</p>
                                 </h4>
-                                <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
+            
                             </div>
                             <div class="buttons">
                             <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
@@ -39,6 +39,7 @@ let generateCartItems = () => {
                           </div>
 
                           <h3>$ ${quantity * search.price}</h3>
+                          <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
                         </div>
                     </div>`;
             })

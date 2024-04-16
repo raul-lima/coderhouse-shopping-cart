@@ -1,7 +1,7 @@
 let shopItemsData = [
     {
         id: "1",
-        name: "High neck sweater",
+        name: "Sweater",
         price: "60",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         img: "images/1.jpg",
@@ -16,14 +16,14 @@ let shopItemsData = [
     {
         id: "3",
         name: "White jacket",
-        price: "60",
+        price: "120",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         img: "images/3.jpg",
     },
     {
         id: "4",
         name: "Black pants",
-        price: "60",
+        price: "150",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         img: "images/4.jpg",
     },
@@ -37,21 +37,21 @@ let shopItemsData = [
     {
         id: "6",
         name: "Droplet earrings",
-        price: "60",
+        price: "200",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         img: "images/6.jpg",
     },
     {
         id: "7",
         name: "Feathered top",
-        price: "60",
+        price: "160",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         img: "images/7.jpg",
     },
     {
         id: "8",
         name: "Doppler dress",
-        price: "60",
+        price: "230",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         img: "images/8.jpg",
     },
