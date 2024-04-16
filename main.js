@@ -82,12 +82,15 @@ let decrement = (id) => {
     let selectedItem = id;
     let search = cart.find((x) => x.id === selectedItem);
 
+    if (search === undefined) return;
+
     if (search.quantity === 0) {
         return;
     } else {
         search.quantity -= 1;
     }
     update(selectedItem);
+    cart = cart.filter((x) => x.quantity !== 0);
     localStorage.setItem("data", JSON.stringify(cart));
 };
 

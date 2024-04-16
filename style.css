@@ -11,6 +11,10 @@ body {
   font-family: sans-serif;
 }
 
+i {
+  cursor: pointer;
+}
+
 /**
 * ? Navbar styles
 **/
@@ -98,3 +102,7 @@ body {
 .bi-plus-lg {
   color: #bbbe64;
 }
+
+/**
+ * ? https://coolors.co/2d2d2a-bbbe64-d00000-c0e8f9-6699cc
+ */
