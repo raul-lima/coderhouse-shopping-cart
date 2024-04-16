@@ -1,41 +1,13 @@
 let shop = document.getElementById("shop");
 
-let shopItemsData = [
-    {
-        id: "1",
-        name: "Broken Heart",
-        price: "60",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        img: "images/product1.jpg",
-    },
-    {
-        id: "2",
-        name: "Broken Heart",
-        price: "60",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        img: "images/product1.jpg",
-    },
-    {
-        id: "3",
-        name: "Broken Heart",
-        price: "60",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        img: "images/product1.jpg",
-    },
-    {
-        id: "4",
-        name: "Broken Heart",
-        price: "60",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        img: "images/product1.jpg",
-    },
-];
-
 let cart = JSON.parse(localStorage.getItem("data")) || [];
 
 let generateShop = () => {
+    console.log(shopItemsData);
+
     return (shop.innerHTML = shopItemsData
         .map((x) => {
+            if (!x || typeof x !== 'object') return '';
             let { id, name, desc, img, price } = x;
             let search = cart.find((y) => y.id == id) || [];
             return `

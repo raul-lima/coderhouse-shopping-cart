@@ -15,6 +15,11 @@ i {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /**
 * ? Navbar styles
 **/
@@ -101,6 +106,67 @@ i {
 
 .bi-plus-lg {
   color: #bbbe64;
+}
+
+/**
+* ? Label and buttons styles
+**/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bi-x-lg {
+  color: #d00000;
+  font-weight: bold;
+}
+
+/**
+* ? Shopping cart styles
+*/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+.cart-item {
+  border: 2px solid #2d2d2a;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #2d2d2a;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
 }
 
 /**
