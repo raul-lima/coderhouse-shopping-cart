@@ -194,6 +194,10 @@ a {
   padding: 3px 6px;
 }
 
+.empty-cart {
+  color: #2d2d2a;
+}
+
 /**
  * ? https://coolors.co/2d2d2a-bbbe64-d00000-c0e8f9-6699cc
  */
